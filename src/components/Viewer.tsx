@@ -8,11 +8,11 @@ const Viewer: React.FC<ViewerProps> = ({ room }) => {
         <PanoViewer
             tag='div'
             image={useRooms(room).image}
-            useZoom={false}
-            projectionType={PROJECTION_TYPE.CUBEMAP}
-            cubemapConfig={{
-                tileConfig: { flipHorizontal: true, rotation: 0 },
-            }}
+            projectionType={PROJECTION_TYPE.CUBESTRIP}
+            height={1000}
+            width={1000}
+            useKeyboard={true}
+            onReady={() => console.log('Viewer ready')}
         />
     )
 }
