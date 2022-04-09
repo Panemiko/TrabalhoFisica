@@ -1,16 +1,19 @@
 {
     "env": {
         "es2021": true,
-        "node": true
+        "browser": true
     },
     "extends": [
         "prettier",
         "eslint:recommended",
-        "plugin:@next/next/recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
@@ -29,6 +32,10 @@
         "sort-imports": "error",
         "no-trailing-spaces": "error",
         "max-len": "error",
+        "indent": [
+            "error",
+            4
+        ],
         "eol-last": [
             "error",
             "always"
