@@ -13,16 +13,18 @@ function App() {
                 {floors.map((floor) => {
                     return (
                         <React.Fragment key={floor.id}>
-                            <label>{floor.name}</label>
-                            {floor.rooms.map((room) => {
-                                return (
-                                    <RoomButton
-                                        key={room.id}
-                                        room={room}
-                                        onClick={setRoom}
-                                    />
-                                )
-                            })}
+                            <span className='floorName'>{floor.name}</span>
+                            <div className='floorRooms'>
+                                {floor.rooms.map((room) => {
+                                    return (
+                                        <RoomButton
+                                            key={room.id}
+                                            room={room}
+                                            onClick={setRoom}
+                                        />
+                                    )
+                                })}
+                            </div>
                         </React.Fragment>
                     )
                 })}

@@ -1,5 +1,4 @@
 import './style.sass'
-import 'photo-sphere-viewer/src/styles/index.scss'
 import React, { useEffect } from 'react'
 import { CubemapAdapter } from 'photo-sphere-viewer/dist/adapters/cubemap'
 import { Viewer as PSViewer } from 'photo-sphere-viewer'
@@ -25,18 +24,10 @@ const Viewer: React.FC<ViewerProps> = ({ room }) => {
                 top: `/${roomId}/top.png`,
                 bottom: `/${roomId}/bottom.png`,
             },
-            panoData: {
-                fullWidth: 6000,
-                fullHeight: 3000,
-                croppedWidth: 4000,
-                croppedHeight: 2000,
-                croppedX: 1000,
-                croppedY: 500,
-                poseHeading: 270, // 0 to 360
-                posePitch: 0, // -90 to 90
-                poseRoll: 0, // -180 to 180
-            },
             navbar: [],
+            loadingImg: '',
+            loadingTxt: '',
+            defaultZoomLvl: 0,
         })
     })
 

@@ -1,22 +1,30 @@
-body 
-    background-color: #31284F
+body
+  background-color: #31284F
 
+.main
+  display: flex
 
-label 
-    color: white
-    margin: 15px
+.menu
+  height: 100vh
+  width: 250px
 
+  color: #5c5c5c
+  background-color: white
 
-.main 
-    display: flex
+  overflow: auto
+  text-align: center
 
+.floorName
+  display: inline-block
+  color: #111
+  text-align: center
+  margin: 10px 0 5px 0
 
-.menu 
-    height: 100vh
-    width: 200px
+::-webkit-scrollbar
+  width: 5px
 
-    color: #cbbdf7
-    background-color: #604E9C
+::-webkit-scrollbar-thumb
+  background: #0000000a
 
-    overflow: auto
-
+::-webkit-scrollbar-thumb:hover
+  background: #0000003b
