@@ -1,7 +1,7 @@
 export default function useRooms(roomName: RoomsName) {
     return {
         name: roomName,
-        image: `${roomName}.png`,
+        images: `/${roomName}/`,
     }
 }
 
