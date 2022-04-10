@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "fix": "python3.8 fixPanorama.py"
   },
   "dependencies": {
     "@egjs/react-view360": "^3.0.2",
