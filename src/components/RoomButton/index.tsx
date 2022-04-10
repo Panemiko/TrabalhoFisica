@@ -1,12 +1,11 @@
-import './style.css'
+import './style.sass'
 import React from 'react'
-import type { Room } from '../../hooks/useRooms'
+import type Room from '../../Room'
 
 const RoomButton: React.FC<RoomButtonProps> = ({ onClick, room }) => {
     return (
         <button tabIndex={-1} onClick={() => onClick(room)}>
             <span className='name'>{room.name}</span>
-            <span className='floor'>{room.floor}</span>
         </button>
     )
 }

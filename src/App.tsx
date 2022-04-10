@@ -1,5 +1,5 @@
-import './App.css'
-import React, { Fragment, useState } from 'react'
+import './App.sass'
+import React, { useState } from 'react'
 import RoomButton from './components/RoomButton'
 import Viewer from './components/Viewer'
 import floors from '../FLOORS.json'
@@ -19,7 +19,7 @@ function App() {
                                     <RoomButton
                                         key={room.id}
                                         room={room}
-                                        onClick={(room) => setRoom(room)}
+                                        onClick={setRoom}
                                     />
                                 )
                             })}
