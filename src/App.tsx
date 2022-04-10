@@ -7,7 +7,7 @@ import rooms from '../ROOMS.json'
 function App() {
     return (
         <React.Fragment>
-            <div className='.menu'>
+            <div className='menu'>
                 {rooms.map((room) => {
                     return (
                         <RoomButton
