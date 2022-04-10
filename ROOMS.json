@@ -1,77 +1,79 @@
-[
-    {
-        "id": 1,
-        "name": "Porão",
-        "floor": 0
-    },
-    {
-        "id": 2,
-        "name": "Sala de estar",
-        "floor": 1
-    },
-    {
-        "id": 3,
-        "name": "Sala de jantar",
-        "floor": 1
-    },
-    {
-        "id": 4,
-        "name": "Cozinha",
-        "floor": 1
-    },
-    {
-        "id": 5,
-        "name": "Despensa",
-        "floor": 1
-    },
-    {
-        "id": 6,
-        "name": "Garagem",
-        "floor": 1
-    },
-    {
-        "id": 7,
-        "name": "Banheiro 1",
-        "floor": 1
-    },
-    {
-        "id": 8,
-        "name": "Escritório",
-        "floor": 1
-    },
-    {
-        "id": 9,
-        "name": "Sacada",
-        "floor": 2
-    },
-    {
-        "id": 10,
-        "name": "Corredor",
-        "floor": 2
-    },
-    {
-        "id": 11,
-        "name": "Suíte",
-        "floor": 2
-    },
-    {
-        "id": 12,
-        "name": "Banheiro 2",
-        "floor": 2
-    },
-    {
-        "id": 13,
-        "name": "Quarto 1",
-        "floor": 2
-    },
-    {
-        "id": 14,
-        "name": "Quarto 2",
-        "floor": 2
-    },
-    {
-        "id": 15,
-        "name": "Banheiro 3",
-        "floor": 2
-    }
-]
+{
+    "floors": [
+        {
+            "name": "Subsolo",
+            "rooms": [
+                {
+                    "id": "basement",
+                    "name": "Porão"
+                }
+            ]
+        },
+        {
+            "name": "Primeiro Andar",
+            "rooms": [
+                {
+                    "id": "living_room",
+                    "name": "Sala de estar"
+                },
+                {
+                    "id": "dining_room",
+                    "name": "Sala de jantar"
+                },
+                {
+                    "id": "kitchen",
+                    "name": "Cozinha"
+                },
+                {
+                    "id": "pantry",
+                    "name": "Despensa"
+                },
+                {
+                    "id": "garage",
+                    "name": "Garagem"
+                },
+                {
+                    "id": "bathroom",
+                    "name": "Banheiro"
+                },
+                {
+                    "id": "office",
+                    "name": "Escritório"
+                }
+            ]
+        },
+        {
+            "name": "Segundo Andar",
+            "rooms": [
+                {
+                    "id": "balcony",
+                    "name": "Sacada"
+                },
+                {
+                    "id": "hall",
+                    "name": "Corredor"
+                },
+                {
+                    "id": "suite",
+                    "name": "Suíte"
+                },
+                {
+                    "id": "bathroom1",
+                    "name": "Banheiro 1"
+                },
+                {
+                    "id": "bedroom1",
+                    "name": "Quarto 1"
+                },
+                {
+                    "id": "bedroom2",
+                    "name": "Quarto 2"
+                },
+                {
+                    "id": "bathroom2",
+                    "name": "Banheiro 2"
+                }
+            ]
+        }
+    ]
+}
