@@ -1,25 +1,36 @@
 import './App.css'
-import React from 'react'
+import React, { Fragment, useState } from 'react'
 import RoomButton from './components/RoomButton'
 import Viewer from './components/Viewer'
-import rooms from '../ROOMS.json'
+import floors from '../FLOORS.json'
 
 function App() {
+    const [room, setRoom] = useState(floors[0].rooms[0])
+
     return (
-        <React.Fragment>
+        <div className='main'>
             <div className='menu'>
-                {rooms.map((room) => {
+                {floors.map((floor) => {
                     return (
-                        <RoomButton
-                            key={room.id}
-                            room={room}
-                            onClick={(room) => console.log(room.name)}
-                        />
+                        <React.Fragment key={floor.id}>
+                            <label>{floor.name}</label>
+                            {floor.rooms.map((room) => {
+                                return (
+                                    <RoomButton
+                                        key={room.id}
+                                        room={room}
+                                        onClick={(room) => setRoom(room)}
+                                    />
+                                )
+                            })}
+                        </React.Fragment>
                     )
                 })}
             </div>
-            <div>{/* <Viewer room={'BALCONY'} /> */}</div>
-        </React.Fragment>
+            <div>
+                <Viewer room={room} />
+            </div>
+        </div>
     )
 }
 
