@@ -1769,6 +1769,14 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+photo-sphere-viewer@^4.6.1:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/photo-sphere-viewer/-/photo-sphere-viewer-4.6.1.tgz#623179ff5cf33f9869119734a38fe0f623cc33e4"
+  integrity sha512-CxlZW2rkW6722tQaAfu4VwJx2Hhg1sswJ237hrv2q7ccB4+U4CWIu1SnGrJ8Bxt6rHSXY0o0G9hC7gERhWVGBg==
+  dependencies:
+    three "^0.139.0"
+    uevent "^2.1.1"
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -2049,6 +2057,11 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
+three@^0.139.0:
+  version "0.139.2"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.139.2.tgz#b110799a15736df673b9293e31653a4ac73648dd"
+  integrity sha512-gV7q7QY8rogu7HLFZR9cWnOQAUedUhu2WXAnpr2kdXZP9YDKsG/0ychwQvWkZN5PlNw9mv5MoCTin6zNTXoONg==
+
 to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
@@ -2099,6 +2112,11 @@ typescript@^4.5.4:
   version "4.6.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
   integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==
+
+uevent@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/uevent/-/uevent-2.1.1.tgz#2f8a6278e56752acf7b2b5ee97e91778bdb0fd81"
+  integrity sha512-wX2DXFNoWHzh44BGpqQn/69LAluey6h8gBZYCIZVHJQWQRFASY/n7zua+bnvSZR2Ip8BpWnPJOLjJvks0nn8aw==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"
