@@ -51,17 +51,22 @@
     },
     {
         "id": 11,
-        "name": "Quarto 1",
+        "name": "Banheiro 2",
         "floor": 2
     },
     {
         "id": 12,
-        "name": "Quarto 2",
+        "name": "Quarto 1",
         "floor": 2
     },
     {
         "id": 13,
-        "name": "Banheiro 2",
+        "name": "Quarto 2",
+        "floor": 2
+    },
+    {
+        "id": 14,
+        "name": "Banheiro 3",
         "floor": 2
     }
 ]
