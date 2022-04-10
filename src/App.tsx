@@ -10,6 +10,17 @@ function App() {
     return (
         <div className='main'>
             <div className='menu'>
+                <a
+                    href={
+                        // eslint-disable-next-line max-len
+                        'https://docs.google.com/document/d/1YcV6RVBIqjU8CgGzx5xw9kOg6Ciyse2WaH88_8BMTuM/edit?usp=sharing'
+                    }
+                    target='_blank'
+                    rel='noreferrer'
+                >
+                    Trabalho Escrito
+                </a>
+                <hr />
                 {floors.map((floor) => {
                     return (
                         <React.Fragment key={floor.id}>
