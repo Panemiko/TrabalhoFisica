@@ -3,7 +3,12 @@ import React from 'react'
 import type { Room } from '../../hooks/useRooms'
 
 const RoomButton: React.FC<RoomButtonProps> = ({ onClick, room }) => {
-    return <button onClick={() => onClick(room)}>{room.name}</button>
+    return (
+        <button tabIndex={-1} onClick={() => onClick(room)}>
+            <span className='name'>{room.name}</span>
+            <span className='floor'>{room.floor}</span>
+        </button>
+    )
 }
 
 export type RoomButtonProps = {
